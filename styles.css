@@ -1,0 +1,381 @@
+/* General Styles for all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;  /* Black background for all pages */
+    color: #fff;  /* White text for better contrast */
+}
+
+/* Flexbox Layout for Navigation */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;  /* Use Flexbox for layout */
+    justify-content: center;  /* Center the buttons horizontally */
+    gap: 20px;  /* Space between buttons */
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff;  /* White text */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    position: relative;
+    background-color: #ff0099;  /* Neon pink background */
+    box-shadow: 0 0 5px #ff0099, 0 0 10px #ff0099, 0 0 20px #ff0099; /* Initial glow effect */
+}
+
+/* Neon Pink Glow Effect on Hover */
+header nav ul li a:hover {
+    color: #fff;
+    border-color: #ff0099;
+    box-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099, 0 0 30px #ff0099;
+    background-color: #ff66b2;
+    font-weight: bold;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+/* Experience Section */
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.experience-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #333; /* Dark background color for experience boxes */
+    border: 1px solid #555; /* Border for contrast */
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+/* First Experience Box containing three row-wise text boxes */
+.experience-box-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-box-1 .small-box {
+    background-color: #444;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .experience-container {
+        flex-direction: column;
+    }
+}
+/* Education Section */
+.education-container {
+    display: flex;
+    justify-content: space-between; /* Side by side alignment */
+    gap: 20px; /* Space between the boxes */
+    margin-top: 20px;
+}
+
+.education-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #b8860b; /* Golden background color */
+    border: 2px solid #daa520; /* Slightly darker golden border */
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px #b8860b, 0 0 20px #daa520; /* Glow effect for golden boxes */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column;
+    }
+}
+.publications-content {
+    padding: 20px;
+    background-color: #222; /* Optional background color for better visibility */
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #fff; /* Ensures text is visible against dark background */
+}
+/* Awards Section */
+.awards-container {
+    display: flex;  /* Align items in a row */
+    justify-content: space-between;  /* Spaces out the boxes evenly */
+    gap: 20px;  /* Space between the boxes */
+    margin-top: 20px;
+}
+
+.award-box {
+    flex: 1;  /* Each box takes up an equal amount of space */
+    padding: 20px;
+    background-color: #b8860b; /* Golden background color */
+    border: 2px solid #daa520; /* Slightly darker golden border */
+    border-radius: 10px;  /* Rounded corners */
+    color: #fff;  /* White text */
+    text-align: center;  /* Centered text */
+    box-shadow: 0 0 10px #b8860b, 0 0 20px #daa520; /* Glow effect for golden boxes */
+}
+
+/* Responsive adjustments for the awards section */
+@media (max-width: 768px) {
+    .awards-container {
+        flex-direction: column; /* Stack boxes vertically on smaller screens */
+    }
+}
+/* Membership Section */
+.membership-container {
+    display: flex;
+    flex-direction: column;  /* Stack boxes vertically */
+    gap: 20px;  /* Space between the boxes */
+    margin-top: 20px;
+}
+
+.membership-box {
+    padding: 20px;
+    background-color: #b8860b; /* Golden background color */
+    border: 2px solid #daa520; /* Slightly darker golden border */
+    border-radius: 10px;  /* Rounded corners */
+    color: #fff;  /* White text */
+    text-align: center;  /* Centered text */
+    box-shadow: 0 0 10px #b8860b, 0 0 20px #daa520; /* Glow effect for golden boxes */
+}
+
+/* Responsive adjustments for the membership section */
+@media (max-width: 768px) {
+    .membership-container {
+        flex-direction: column; /* Keep stacking vertically on smaller screens */
+    }
+}
+/* Events Section */
+.events-container {
+    display: flex;
+    flex-direction: column;  /* Stack boxes vertically */
+    gap: 20px;  /* Space between the boxes */
+    margin-top: 20px;
+}
+
+.event-box {
+    padding: 20px;
+    background-color: #b8860b; /* Golden background color */
+    border: 2px solid #daa520; /* Slightly darker golden border */
+    border-radius: 10px;  /* Rounded corners */
+    color: #fff;  /* White text */
+    text-align: center;  /* Centered text */
+    box-shadow: 0 0 10px #b8860b, 0 0 20px #daa520; /* Glow effect for golden boxes */
+}
+
+/* Responsive adjustments for the events section */
+@media (max-width: 768px) {
+    .events-container {
+        flex-direction: column; /* Stack boxes vertically on smaller screens */
+    }
+}
+/* Contact Section */
+.contact-container {
+    display: flex;
+    flex-direction: column;  /* Stack boxes vertically */
+    gap: 20px;  /* Space between the boxes */
+    margin-top: 20px;
+}
+
+.contact-box {
+    padding: 20px;
+    background-color: #000; /* Black background color */
+    border: 2px solid #ff0099; /* Neon pink border */
+    border-radius: 10px;  /* Rounded corners */
+    color: #fff;  /* White text for contrast */
+    text-align: center;  /* Centered text */
+    box-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099; /* Neon pink glow effect */
+}
+
+/* Responsive adjustments for the contact section */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack boxes vertically on smaller screens */
+    }
+}
+/* Index Page - Black Boxes with Pink Flex */
+.index-container {
+    display: flex;
+    flex-direction: column;  /* Stack boxes vertically */
+    gap: 20px;  /* Space between the boxes */
+    margin-top: 20px;
+}
+
+.index-box {
+    padding: 20px;
+    background-color: #000;  /* Black background color */
+    border: 2px solid #ff0099;  /* Neon pink border */
+    border-radius: 10px;  /* Rounded corners */
+    color: #fff;  /* White text */
+    text-align: center;  /* Centered text */
+    box-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099;  /* Neon pink glow effect */
+}
+
+/* Responsive adjustments for the index boxes */
+@media (max-width: 768px) {
+    .index-container {
+        flex-direction: column; /* Keep stacking vertically on smaller screens */
+    }
+}
+/* Experience Page - Black Boxes with Pink Flex */
+.experience-flex-container {
+    display: flex;
+    flex-direction: column;  /* Stack boxes vertically */
+    gap: 20px;  /* Space between the boxes */
+    margin-top: 20px;
+}
+
+.experience-flex-box {
+    padding: 20px;
+    background-color: #000;  /* Black background color */
+    border: 2px solid #ff0099;  /* Neon pink border */
+    border-radius: 10px;  /* Rounded corners */
+    color: #fff;  /* White text */
+    text-align: center;  /* Centered text */
+    box-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099;  /* Neon pink glow effect */
+}
+
+/* Responsive adjustments for experience flex boxes */
+@media (max-width: 768px) {
+    .experience-flex-container {
+        flex-direction: column;  /* Stack vertically on smaller screens */
+    }
+}
+/* General Styles for all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;  /* Black background for all pages */
+    color: #fff;  /* White text for better contrast */
+}
+
+/* Flexbox Layout for Navigation */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;  /* Use Flexbox for layout */
+    justify-content: center;  /* Center the buttons horizontally */
+    gap: 20px;  /* Space between buttons */
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff;  /* White text */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    position: relative;
+    background-color: #ff0099;  /* Neon pink background */
+    box-shadow: 0 0 5px #ff0099, 0 0 10px #ff0099, 0 0 20px #ff0099; /* Initial glow effect */
+}
+
+/* Neon Pink Glow Effect on Hover */
+header nav ul li a:hover {
+    color: #fff;
+    border-color: #ff0099;
+    box-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099, 0 0 30px #ff0099;
+    background-color: #ff66b2;
+    font-weight: bold;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+/* Flexbox Black Text Boxes with Pink Flex */
+.flex-container {
+    display: flex;
+    flex-direction: column;  /* Stack boxes vertically */
+    gap: 20px;  /* Space between the boxes */
+    margin-top: 20px;
+}
+
+.flex-box {
+    padding: 20px;
+    background-color: #000;  /* Black background color */
+    border: 2px solid #ff0099;  /* Neon pink border */
+    border-radius: 10px;  /* Rounded corners */
+    color: #fff;  /* White text */
+    text-align: center;  /* Centered text */
+    box-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099;  /* Neon pink glow effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;  /* Stack vertically on smaller screens */
+    }
+}
